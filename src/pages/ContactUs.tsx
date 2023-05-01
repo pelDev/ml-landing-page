@@ -7,7 +7,6 @@ import { emailValidator } from "../utils/validators/emailValidator";
 import { emptyValidator } from "../utils/validators/emptyValidator";
 import { nameValidator } from "../utils/validators/nameVaildator";
 import Input, { TextArea } from "../components/Input/Input";
-import Animations from "../utils/Animations";
 import Button from "../components/Button/Button";
 interface ContactUsInput {
   email: string;
@@ -15,8 +14,6 @@ interface ContactUsInput {
   message: string;
 }
 export const ContactUs = () => {
-  const { stagger, star, fadeInUp, btnGroup, letter, firstName } =
-    new Animations();
   const contactUsForm = useForm<ContactUsInput>(
     {
       email: "",
