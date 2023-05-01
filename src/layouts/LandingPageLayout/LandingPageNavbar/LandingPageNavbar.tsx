@@ -20,7 +20,8 @@ const LandingPageNavbar = (props: ILandingPageNavbar) => {
 
   const { stagger, fadeInUp, btnGroup } = new Animations();
 
-  const goToLogin = () => navigate(AllRouteConstants.landingPage.index);
+  const goToLogin = () =>
+    navigate("https://d2surso6f0jxm9.cloudfront.net/auth/signin");
   const goToSignup = () => navigate(AllRouteConstants.landingPage.index);
 
   return (
@@ -60,18 +61,18 @@ const LandingPageNavbar = (props: ILandingPageNavbar) => {
           animate="animate"
           variants={btnGroup()}
         >
-          <button
-            className="mb_landing_page_navbar_right-login_button"
-            onClick={goToLogin}
+          <Link
+            to="https://d2surso6f0jxm9.cloudfront.net/auth/signin"
+            className="mb_landing_page_navbar_right-login_button button"
           >
             Log in
-          </button>
-          <button
-            className="mb_landing_page_navbar_right-signup_button"
-            onClick={goToSignup}
+          </Link>
+          <Link
+            to="https://d2surso6f0jxm9.cloudfront.net/auth/signup"
+            className="mb_landing_page_navbar_right-signup_button button"
           >
             Sign Up
-          </button>
+          </Link>
         </motion.span>
 
         <motion.span className="mb_landing_page_navbar-hamburger">
