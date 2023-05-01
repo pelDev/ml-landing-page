@@ -3,6 +3,7 @@ import "../styles/about_us_styles.scss";
 import Image from "../assets/images/about-us-image.png";
 import ScrollAnimation from "react-animate-on-scroll";
 import { motion } from "framer-motion";
+import { FrequentlyAskedQuestion } from "../components";
 
 export const AboutUs = () => {
   return (
@@ -49,10 +50,31 @@ export const AboutUs = () => {
             </p>
           </motion.div>
         </motion.div>
-        <div className="mb_about_us-bottom">
+        <ScrollAnimation animateIn="zoomIn" className="mb_about_us-bottom">
           <h2 className="header">Frequently Asked Questions</h2>
-          <div className="mb_about_us-bottom_questions"></div>
-        </div>
+          <div className="mb_about_us-bottom_questions">
+            <FrequentlyAskedQuestion
+              heading="Who can use Mobilearning?"
+              content="An online learning website is a platform that provides educational content, such as courses, tutorials, and other resources, over the internet. Learners can access these materials from anywhere at any time."
+            />
+            <FrequentlyAskedQuestion
+              heading="What Feature Does Mobilearning Offer?"
+              content="An online learning website is a platform that provides educational content, such as courses, tutorials, and other resources, over the internet. Learners can access these materials from anywhere at any time."
+            />
+            <FrequentlyAskedQuestion
+              heading="How does the appointment feature work?"
+              content="An online learning website is a platform that provides educational content, such as courses, tutorials, and other resources, over the internet. Learners can access these materials from anywhere at any time."
+            />
+            <FrequentlyAskedQuestion
+              heading="How does the video conferencing feature work?"
+              content="An online learning website is a platform that provides educational content, such as courses, tutorials, and other resources, over the internet. Learners can access these materials from anywhere at any time."
+            />
+            <FrequentlyAskedQuestion
+              heading="Can Mobilearning Be Use For Personal and Group Purposes?"
+              content="An online learning website is a platform that provides educational content, such as courses, tutorials, and other resources, over the internet. Learners can access these materials from anywhere at any time."
+            />
+          </div>
+        </ScrollAnimation>
       </div>
     </div>
   );
