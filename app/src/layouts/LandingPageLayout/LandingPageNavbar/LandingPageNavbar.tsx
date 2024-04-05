@@ -62,13 +62,13 @@ const LandingPageNavbar = (props: ILandingPageNavbar) => {
           variants={btnGroup()}
         >
           <Link
-            to="https://d2surso6f0jxm9.cloudfront.net/auth/signin"
+            to="https://app.mobilearnings.com/auth/signin"
             className="mb_landing_page_navbar_right-login_button button"
           >
             Log in
           </Link>
           <Link
-            to="https://d2surso6f0jxm9.cloudfront.net/auth/signup"
+            to="https://app.mobilearnings.com/auth/signup"
             className="mb_landing_page_navbar_right-signup_button button"
           >
             Sign Up

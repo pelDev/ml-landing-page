@@ -72,14 +72,15 @@ export const Hero = () => {
                   </IconContext.Provider>
                 </motion.div>
 
-                <motion.div
+                <motion.button
                   className="btn btn_primary"
                   variants={btnGroup()}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
+                  onClick={() => window.open("https://app.mobilearnings.com")}
                 >
                   Get Started
-                </motion.div>
+                </motion.button>
               </motion.div>
             </motion.span>
           </div>

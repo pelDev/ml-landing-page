@@ -20,7 +20,8 @@ $white: #fff;
     display: flex;
     align-items: center;
     gap: 5em;
-    width: 30%;
+    width: fit-content;
+    min-width: 30%;
     justify-content: space-between;
 
     &-list_container {
