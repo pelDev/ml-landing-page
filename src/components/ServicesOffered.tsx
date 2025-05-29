@@ -1,4 +1,4 @@
-import { Service } from "./";
+import { Service } from ".";
 import "../styles/services_offered_styles.scss";
 import { motion } from "framer-motion";
 import Image from "../assets/images/services_offered_image_1.png";

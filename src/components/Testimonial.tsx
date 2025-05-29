@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/testimonial_styles.scss";
-import { TestimonialSphere } from "./";
+import { TestimonialSphere } from ".";
 export const Testimonial = () => {
   return (
     <div className="mb_testimonial">

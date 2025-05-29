@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Animations from "../utils/Animations";
 import { IconContext } from "react-icons";
 import BG from "../assets/images/HeroImage2.png";
-import { TextSequence } from "./";
+import { TextSequence } from ".";
 import { BsArrowRight } from "react-icons/bs";
 
 export const Hero = () => {
