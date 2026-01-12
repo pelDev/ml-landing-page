@@ -1,7 +1,7 @@
 on:
     push:
         branches:
-            - prod
+            - master
         paths:
             - "build_prod.sh"
             - ".github/workflows/prod.yaml"
